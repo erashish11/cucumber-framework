@@ -13,8 +13,8 @@ public class Drivers {
 
     public static Logger log = LogManager.getLogger(Drivers.class);
     public WebDriver driver;
-    String browserType = "chrome";//System.getProperty("browser");
-    String headless =    "false";//System.getProperty("headless");
+    String browserType = System.getProperty("browser");
+    String headless =    System.getProperty("headless");
     public WebDriver getWebDriver() {
         if (driver == null || driver.toString().contains("null")) {
             driver = getDriver();

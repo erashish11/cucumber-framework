@@ -1,8 +1,6 @@
 package actions.search;
 
-
 import actions.UIActions;
-import driverconfig.Drivers;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
