@@ -5,6 +5,9 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+import java.util.Iterator;
+import java.util.List;
+
 
 public class Search {
 
@@ -24,5 +27,13 @@ public class Search {
     public void relevant_search_result_are_displayed_in_the_screen() {
 
     }
+    @Given("user performs the search for below keywords")
+    public void user_performs_the_search_for_below_keywords(io.cucumber.datatable.DataTable searchText) {
 
+       List<String> keywords= searchText.asList(String.class);
+        System.out.println(keywords);
+
+
+
+    }
 }

@@ -7,7 +7,19 @@
     <groupId>com.db.ui</groupId>
     <artifactId>programs</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+   <properties>
+
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <project.build.resourceEncoding>UTF-8</project.build.resourceEncoding>
+    <maven.compile.encoding>UTF-8</maven.compile.encoding>
+    </properties>
+
+
     <dependencies>
+
+
 
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -105,7 +117,7 @@
                         <configuration>
                             <glue>stepdefinations</glue>
                             <featuresDirectory>src/test/resources</featuresDirectory>
-                            <cucumberOutputDir>target/cucumber-parallel</cucumberOutputDir>
+                            <cucumberOutputDir>target</cucumberOutputDir>
                             <plugins>
                                 <plugin>
                                     <name>json</name>
